@@ -185,9 +185,9 @@ public class ArrayStack implements IStack {
     // main method
     public static void main(String[] args) {
         ArrayStack stack = new ArrayStack(5);
-        stack.Push(1);
-        stack.Push(2);
-        stack.Push(3);
+        stack.Push(10);
+        stack.Push(20);
+        stack.Push(30);
         System.out.println("Stack1: " + stack.toString());
         System.out.println("Size: " + stack.Size());
         System.out.println("Peek: " + stack.Peek());
@@ -198,7 +198,7 @@ public class ArrayStack implements IStack {
         System.out.println("Bottom Element: " + stack.Bottom());
         System.out.println("Middle Element: " + stack.midelemet());
         System.out.println("Sum of Elements: " + stack.sum());
-        System.out.println("Search for 2: " + stack.searchstack(2));
+        System.out.println("Search for 20: " + stack.searchstack(20));
         stack.replacestackelement(2, 5);
         System.out.println("Stack1 after replacement: " + stack.toString());
         stack.deleteStackElement(5);
