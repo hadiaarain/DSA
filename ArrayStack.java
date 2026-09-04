@@ -173,7 +173,7 @@ public class ArrayStack implements IStack {
         return sub;
     }
 
-    // middle element
+    // middle element of stack
     public Object midelemet() {
         if (size == 0) {
             throw new IllegalStateException("Stack is Empty");
