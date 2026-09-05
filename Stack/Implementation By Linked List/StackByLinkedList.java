@@ -241,11 +241,11 @@ public class StackByLinkedList implements IStack {
 
         Node current = top;
 
-        int index = 0;
+        int index = 1;
 
-        while (current != null) {
+        while (current != null && index <= end) {
 
-            if (index >= start && index <= end) {
+            if (index >= start ) {
 
                 result.Push(current.data);
             }
