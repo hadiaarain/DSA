@@ -264,31 +264,13 @@ public class StackByLinkedList implements IStack {
 
     public void Merge(StackByLinkedList s) {
 
-        if (s == null || s.size == 0) {
-            return;
-        }
+    Node c = s.top;
 
-        Node current = s.top;
-
-        // Store elements temporarily
-        Object[] temp = new Object[s.size];
-
-        int i = 0;
-
-        while (current != null) {
-
-            temp[i] = current.data;
-
-            i++;
-
-            current = current.next;
-        }
-
-        // Push in reverse order
-        for (i = temp.length - 1; i >= 0; i--) {
-
-            Push(temp[i]);
-        }
+    while (c != null) {
+        this.Push(c.data);
+        c = c.next;
+    
+}
     }
 
     // =========================================
