@@ -210,25 +210,20 @@ public class StackByLinkedList implements IStack {
 
     public void Rev() {
 
-        Node previous = null;
-
-        Node current = top;
-
-        Node next;
-
-        while (current != null) {
-
-            next = current.next;
-
-            current.next = previous;
-
-            previous = current;
-
-            current = next;
+        int c=0;
+        Object[] arr = new Object[size];
+        
+        System.out.println("Original Array: ");
+        for(Node i=top;i!=null;i=i.next){
+            System.out.println(arr[c++]=i.data);
         }
-
-        top = previous;
-    }
+        
+        System.out.println();
+        
+        System.out.println("Reversed Array: ");
+        for(int i=arr.length-1;i>=0;i--){
+            System.out.println(arr[i]);
+    }}
 
     // =========================================
     // SUBSTACK
